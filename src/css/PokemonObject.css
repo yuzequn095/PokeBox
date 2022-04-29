@@ -1,0 +1,169 @@
+/* CSS Settings for loading indicator */
+   .loading__indicator{
+    padding-left: 50%;
+
+    margin: 1rem;
+   }
+
+   @keyframes gg-bar {
+    10% {box-shadow: inset 0 -4px 0}
+    30% {box-shadow: inset 0 -10px 0}
+    60% {box-shadow: inset 0 -6px 0}
+    80% {box-shadow: inset 0 -8px 0}
+    to {box-shadow: inset 0 -2px 0}
+   }
+   
+   .gg-loadbar-sound,
+   .gg-loadbar-sound::after,
+   .gg-loadbar-sound::before {
+    display: block;
+    box-sizing: border-box;
+    width: 2px;
+    height: 12px;
+    box-shadow: inset 0 -12px 0;
+    animation: gg-bar 1.3s ease infinite alternate
+   }
+   
+   .gg-loadbar-sound {
+    position: relative;
+    transform: scale(var(--ggs,1))
+   }
+   
+   .gg-loadbar-sound::after,
+   .gg-loadbar-sound::before {
+    content: "";
+    position: absolute;
+    bottom: 0
+   }
+   
+   .gg-loadbar-sound::before {
+    left: -4px;
+    animation-delay: -2.4s
+   }
+   
+   .gg-loadbar-sound::after {
+    right: -4px;
+    animation-delay: -3.7s
+   } 
+
+/* CSS Settings for Pokemon container */
+
+.pokemon__container {
+    background-color: darkorange;
+
+    border-radius: 10%;
+}
+
+.water {
+    background-color: blue;
+}
+
+.fire {
+    background-color: red;
+}
+
+.grass {
+    background-color: greenyellow;
+}
+
+.rock {
+    background-color: rosybrown;
+}
+
+.ice {
+    background-color: aqua;
+}
+
+.poison  {
+    background-color: purple;
+}
+
+.fairy {
+    background-color: plum;
+}
+
+.normal {
+    background-color: bisque;
+}
+
+.bug {
+    background-color: darkolivegreen;
+}
+
+.electric {
+    background-color: yellow;
+}
+
+.ghost {
+    background-color: gray;
+}
+
+/* Desktop Model */
+@media (min-width: 600px) {
+
+    .pokemon__container {
+        background-color: darkorange;
+
+        margin: 2rem;
+        margin-left: 30%;
+        margin-right: 30%;
+
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+
+        border-radius: 10%;
+
+        overflow: hidden;
+        transition-duration: 1s;
+        transition-property: transform;
+    }
+
+    .pokemon__container:hover {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+    
+    .water {
+        background-color: blue;
+    }
+
+    .fire {
+        background-color: red;
+    }
+
+    .grass {
+        background-color: greenyellow;
+    }
+
+    .rock {
+        background-color: rosybrown;
+    }
+
+    .ice {
+        background-color: aqua;
+    }
+
+    .poison  {
+        background-color: purple;
+    }
+
+    .fairy {
+        background-color: plum;
+    }
+
+    .normal {
+        background-color: bisque;
+    }
+
+    .bug {
+        background-color: darkolivegreen;
+    }
+
+    .electric {
+        background-color: yellow;
+    }
+
+    .ghost {
+        background-color: gray;
+    }
+}

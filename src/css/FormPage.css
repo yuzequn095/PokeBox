@@ -1,0 +1,82 @@
+form{
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+#annoy_checkbox{
+    display: inline-block;
+}
+
+input:invalid{
+    background-color: red;
+}
+
+input:required{
+    color: red;
+}
+
+select:invalid{
+    background-color: red;
+}
+
+label:hover{
+    background-color: yellow;
+}
+
+#submit_button {
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+/* CSS Settings for desktop model*/
+@media (min-width: 600px){
+    form{
+        grid-area: form;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+    
+    label{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    
+    #annoy_checkbox{
+        display: inline-block;
+    }
+    
+    input:invalid{
+        background-color: red;
+    }
+    
+    input:required{
+        color: red;
+    }
+    
+    select:invalid{
+        background-color: red;
+    }
+    
+    label:hover{
+        background-color: yellow;
+    }
+    
+    #submit_button {
+        width: 5rem;
+        margin-bottom: 1rem;
+    }
+}

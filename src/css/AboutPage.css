@@ -1,0 +1,130 @@
+/* CSS Settings about Page */
+.body__about { 
+    display: flex;
+    flex-direction: column;
+  
+    margin: auto;
+    width: 80%;
+    max-width: 35rem;
+    border: 1px solid black;
+    border-bottom: none;
+  }
+  
+  /* CSS Settings about Accordion title */
+  .accordion__title { 
+    position: relative;
+  
+    display: inline-block;
+    
+    width: 100%;
+    padding: 1rem;
+    padding-right: 2rem;
+    border: none;
+    border-bottom: 1px solid #F38603;
+  
+    background-color: #EFCB02;
+    font: inherit;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .accordion__title::after { 
+    position: absolute;
+    right: 1rem;
+    top: calc(50% - 1ch);
+  }
+  
+  .accordion__title::after { 
+    content: "\2795";
+  }
+  
+  /* CSS Settings about Accordion entry */
+  .accordion__entry--open .accordion__title::after { 
+    content: "\2796";
+  }
+  
+  .accordion__entry--open .accordion__title {
+    background-color: #C2800B;
+  }
+
+  /* CSS Settings about Accordion body */
+  .accordion__body { 
+    display: none;
+  
+    padding: 1rem;
+    border-bottom: 1px solid black;
+  }
+  
+  .accordion__entry--open .accordion__body { 
+    display: block;
+  }
+
+  /* Desktop Model */
+@media (min-width: 600px){
+  /* CSS Settings about Page */
+  .body__about { 
+    display: flex;
+    flex-direction: column;
+  
+    margin: auto;
+    width: 80%;
+    max-width: 35rem;
+    border: 1px solid black;
+    border-bottom: none;
+  }
+  
+  /* CSS Settings about Accordion title */
+  .accordion__title { 
+    position: relative;
+  
+    display: inline-block;
+    
+    width: 100%;
+    padding: 1rem;
+    padding-right: 2rem;
+    border: none;
+    border-bottom: 1px solid #F38603;
+  
+    background-color: #EFCB02;
+    font: inherit;
+    font-weight: bold;
+    text-align: left;
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  
+  .accordion__title::after { 
+    position: absolute;
+    right: 1rem;
+    top: calc(50% - 1ch);
+  }
+  
+  .accordion__title::after { 
+    content: "\2795";
+  }
+  
+  /* CSS Settings about Accordion entry */
+  .accordion__entry--open .accordion__title::after { 
+    content: "\2796";
+  }
+  
+  .accordion__entry--open .accordion__title {
+    background-color: #C2800B;
+  }
+
+  /* CSS Settings about Accordion body */
+  .accordion__body { 
+    display: none;
+  
+    text-align: left;
+    
+    padding: 1rem;
+    border-bottom: 1px solid black;
+  }
+  
+  .accordion__entry--open .accordion__body { 
+    display: block;
+  }
+}

@@ -1,0 +1,89 @@
+/* CSS Settings for Loading indicator */
+   .loading__indicator {
+        text-align: center;
+   }
+
+   @keyframes spinner-two-alt {
+    0% {transform: rotate(0deg)}
+    to {transform: rotate(359deg)}
+   }
+   
+   .gg-spinner-two-alt,.gg-spinner-two-alt::before {
+    box-sizing: border-box;
+    display: block;
+    width: 20px;
+    height: 20px
+   }
+   
+   .gg-spinner-two-alt {
+    transform: scale(var(--ggs,1));
+    position: relative
+   }
+   
+   .gg-spinner-two-alt::before {
+    content: "";
+    position: absolute;
+    border-radius: 100px;
+    animation: spinner-two-alt 1s cubic-bezier(.6,0,.4,1) infinite;
+    border: 3px solid transparent;
+    border-bottom-color: currentColor;
+    border-top-color: currentColor
+   } 
+
+/* CSS Settings for Pokemon Card */
+.team__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.team__pokemon {
+    grid-column: span 4;
+
+    border: 1px solid blue;
+    border-radius: 1rem;
+
+    min-height: 20rem;
+    
+    background-color: white;
+}
+
+/* CSS Settings for Desktop model */
+@media (min-width: 600px){
+
+    .loading__indicator {
+        text-align: center;
+    }
+
+    
+    /* CSS Settings for Pokemon Card */
+    .team__card {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    
+        padding: 0.25rem;
+        gap: 1rem;
+    
+        background-color: #FFE033;
+    }
+
+    input::placeholder {
+        color: black;
+    }
+    
+    button {
+        margin-top: 1rem;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    
+    .team__pokemon {
+        grid-column: span 4;
+    
+        border: 1px solid blue;
+        border-radius: 1rem;
+    
+        min-height: 20rem;
+        
+        background-color: white;
+    }
+}

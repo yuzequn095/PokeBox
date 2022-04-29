@@ -1,0 +1,59 @@
+/* CSS Settings about laoding indicator */
+.loading__indicator{
+    padding-left: 50%;
+}
+
+.gg-spinner {
+    transform: scale(var(--ggs,1));
+
+    text-align: center;
+}
+.gg-spinner,
+.gg-spinner::after,
+.gg-spinner::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px
+}
+.gg-spinner::after,
+.gg-spinner::before {
+    content: "";
+    position: absolute;
+    border-radius: 100px
+}
+.gg-spinner::before {
+    animation: spinner 1s
+    cubic-bezier(.6,0,.4,1) infinite;
+    border: 3px solid transparent;
+    border-top-color: currentColor
+}
+.gg-spinner::after {
+    border: 3px solid;
+    opacity: .2
+}
+@keyframes spinner {
+    0% { transform: rotate(0deg) }
+    to { transform: rotate(359deg) }
+}
+
+/* CSS Settings for pokemon list */
+.pokemon__list{
+    list-style: none;
+}
+
+/* CSS Settings for pokemin button */
+.dex__button{
+    margin: 1rem;
+}
+
+/* Desktop moodel CSS */
+@media (min-width: 600px) {
+    .dex__button{
+        margin: 1rem;
+
+        width: 15rem;
+        height: 2rem;
+    }
+}

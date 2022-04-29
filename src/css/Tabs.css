@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+/* CSS Settings for logo bar */
+.tabs{
+    padding: 0;
+    margin: 0;
+}
+
+.logo_bar {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FFE033;
+
+    text-align: center;
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+.logo_bar > img {
+    width: 7rem;
+    height: 6rem;
+
+    padding-top: 5rem;
+}
+
+.logo_bar h1 {
+    font-family: 'Sigmar One', cursive;
+    font-size: 1.5rem;
+
+    position: relative;
+    top: 1rem;
+    padding-left: 1rem;
+}
+
+.logo_bar h2 {
+    font-family: 'Sigmar One', cursive;
+    font-size: 0.9rem;
+
+    position: relative;
+    bottom: 1rem;
+    padding-left: 1rem;
+}
+
+/* CSS Settings for Tabs bar */
+.tabs__entry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0;
+
+    background-color: #AD6C14;
+}
+
+.tabs__title {
+    height: 100%;
+
+    padding: 0.5rem;
+    margin: 0;
+
+    border: 1px solid black;
+
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    font-weight: 100;
+    font-size: 0.7rem;
+}
+
+.tabs__title--active {
+    position: relative;
+    bottom: -1px;
+
+    border-bottom: 1px solid white;
+
+    background-color: #F82626;
+    color: white;
+}
+
+.tabs__title--inactive {
+    border-bottom: none;
+
+    background-color: #C80707;
+    color: white;
+}
+
+/* CSS Settings for main body */
+
+.user__name {
+    width: 10rem;
+    margin-left: auto;
+
+    font-size: 0.7rem;
+}
+
+.tabs__body {
+    padding: 1.5rem;
+    margin: -1rem;
+}
+
+/* CSS Settings for footer */
+footer {
+    width: 100%;
+
+    background-color: #AD6C14;
+}
+
+.footer__text {
+    margin: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+
+    text-align: left;
+}
+
+/* Desktop Model */
+@media (min-width: 600px){
+    .tabs{
+        padding: 0;
+        margin: 0;
+    }
+
+    /* CSS Settings for logo bar */
+
+    .logo_bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #FFE033;
+    }
+
+    .logo_bar > img {
+        float: left;
+        width: 11rem;
+        height: 10rem;
+    }
+
+    .logo_bar h1 {
+        font-family: 'Sigmar One', cursive;
+        font-size: 4rem;
+
+        position: relative;
+        top: 1rem;
+        padding-left: 1rem;
+    }
+
+    .logo_bar h2 {
+        font-family: 'Sigmar One', cursive;
+        font-size: 1.5rem;
+
+        position: relative;
+        bottom: 1rem;
+        padding-left: 1rem;
+    }
+
+    /* CSS Settings for Tabs bar */
+    .tabs__entry {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+
+        padding-top: 1rem;
+        margin: 0;
+
+        background-color: #AD6C14;
+    }
+
+    .tabs__title {
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+        margin: 0;
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+        border: 1px solid black;
+
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+
+        font: inherit;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .tabs__title--active {
+        position: relative;
+        bottom: -1px;
+
+        border-bottom: 1px solid white;
+
+        background-color: #F82626;
+        color: white;
+    }
+
+    .tabs__title--inactive {
+        border-bottom: none;
+
+        background-color: #C80707;
+        color: white;
+    }
+
+    /* CSS Settings for main body */
+
+    .user__name {
+        width: 10rem;
+        margin-left: auto;
+
+        font-size: 1rem;
+    }
+
+    .tabs__body {
+        padding: 1.5rem;
+        margin: -1rem;
+    }
+
+    /* CSS Settings for footer */
+    footer {
+        width: 100%;
+
+        background-color: #AD6C14;
+    }
+
+    .footer__text {
+        margin: 0.5rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+
+        text-align: left;
+    }
+
+}

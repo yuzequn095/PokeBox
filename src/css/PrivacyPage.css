@@ -1,0 +1,28 @@
+.private__policy > p {
+    text-align: left;
+}
+
+.policy__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.policy__list > li {
+    text-align: left;
+}
+
+@media (min-width: 600px){
+    .private__policy > p {
+        text-align: left;
+    }
+    
+    .policy__list {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .policy__list > li {
+        padding-left: 0;
+        padding-right: 2rem;
+    }
+}
